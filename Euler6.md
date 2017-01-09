@@ -1,6 +1,6 @@
 #题目6：平方和与和平方的差是多少？
 
-``` javascript
+```javascript
     var sumSquare = 0;
     var squareSum = 0;
     for (var i = 1; i <= 100; i++) {

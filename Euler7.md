@@ -1,5 +1,5 @@
 #题目7：找出第10001个质数。
-``` javascript
+```javascript
     var arr = [];
     for (var j = 2; arr.length <= 10000; j++) {
         IfPrimeNo(j);

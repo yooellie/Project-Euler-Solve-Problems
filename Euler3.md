@@ -1,5 +1,5 @@
 #题目3：找出一个合数的最大质数因子
-``` javascript
+```javascript
     //n为合数
     var n = 600851475143;
     var max = 0;
