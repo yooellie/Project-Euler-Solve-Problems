@@ -23,10 +23,11 @@
         "71636269561882670428252483600823257530420752963450";
     var str13 = "";
     var max = 0;
-    for (var i = 0; i < (1000 - 13); i++) {
-        str13 = str.substr(i, 13);
+    const  CONTINUE_NO = 13;
+    for (var i = 0; i < (1000 - CONTINUE_NO); i++) {
+        str13 = str.substr(i, CONTINUE_NO);
         var val = 1;
-        for (var j = 0; j < 13; j++) {
+        for (var j = 0; j < CONTINUE_NO; j++) {
             val *= str13.substr(j, 1);
         }
         if (val > max) {

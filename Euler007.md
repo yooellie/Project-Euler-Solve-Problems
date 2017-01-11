@@ -1,7 +1,8 @@
 #题目7：找出第10001个质数。
 ```javascript
     var arr = [];
-    for (var j = 2; arr.length <= 10000; j++) {
+    const PRIME_SERIAL_NO = 10000;
+    for (var j = 2; arr.length <= PRIME_SERIAL_NO; j++) {
         IfPrimeNo(j);
     }
 
@@ -14,5 +15,5 @@
         }
         arr.push(zs);
     }
-    alert("第10001个质数：" + arr[10000]);
+    alert("第10001个质数：" + arr[PRIME_SERIAL_NO]);
 ```

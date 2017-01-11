@@ -4,7 +4,8 @@ a^2 + b^2 = c^2 例如：3^2 + 4^2 = 9 + 16 = 25 = 5^2.
 ```javascript
         var arr = [];
         var sum = 0;
-        for (var j = 2; j <= 2000000; j++) {
+        const WITHIN_NO = 2000000;
+        for (var j = 2; j <= WITHIN_NO; j++) {
             IfPrimeNo(j);
         }
         //如果用2到根号zs之间的所有整数去除，均无法整除，则zs为质数。

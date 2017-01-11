@@ -4,13 +4,14 @@ a^2 + b^2 = c^2 例如：3^2 + 4^2 = 9 + 16 = 25 = 5^2.
 
 ```javascript
     var IfExist = false;
-    for (var c = 1; c < 1000; c++) {
+    const SUM = 1000;
+    for (var c = 1; c < SUM; c++) {
         for (var b = 1; b < c; b++) {
             for (var a = 1; a < b; a++) {
-                if (Math.sqrt(a * a + b * b) === (1000 - a - b)) {
+                if (Math.sqrt(a * a + b * b) === (SUM - a - b)) {
                     //只打印一次
                     if (!IfExist) {
-                        var cVal = 1000 - a - b;
+                        var cVal = SUM - a - b;
                         var abc = a * b * cVal;
                         console.log("a:" + a + " b:" + b + " c:" + cVal + " a*b*c:" + abc);
                     }

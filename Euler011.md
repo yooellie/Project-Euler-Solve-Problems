@@ -46,6 +46,7 @@
         "20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16 " +
         "20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54 " +
         "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48 ";
+    const LIST = 20;
     var arr = [];
     var max = 0;
     var product1 = 0;
@@ -53,29 +54,29 @@
     var product3 = 0;
     var product4 = 0;
 
-    for (var col = 0; col < 20; col++) {
+    for (var col = 0; col < LIST; col++) {
         arr[col] = [];
-        for (var row = 0; row < 20; row++) {
+        for (var row = 0; row < LIST; row++) {
             arr[col][row] = [];
             //如同坐标(x,y)
-            arr[col][row] = str.split(" ")[20 * row + col];
+            arr[col][row] = str.split(" ")[LIST * row + col];
         }
     }
-    for (var y = 0; y < 20; y++) {
-        for (var x = 0; x < 20; x++) {
-            if (y + 3 < 20) {
+    for (var y = 0; y < LIST; y++) {
+        for (var x = 0; x < LIST; x++) {
+            if (y + 3 < LIST) {
                 product1 = arr[x][y] * arr[x][y + 1] * arr[x][y + 2] * arr[x][y + 3];
                 if (product1 > max) {
                     max = product1;
                 }
             }
-            if (x + 3 < 20) {
+            if (x + 3 < LIST) {
                 product2 = arr[x][y] * arr[x + 1][y] * arr[x + 2][y] * arr[x + 3][y];
                 if (product2 > max) {
                     max = product2;
                 }
             }
-            if ((x + 3 < 20) && (y + 3 < 20)) {
+            if ((x + 3 < LIST) && (y + 3 < LIST)) {
                 product3 = arr[x][y] * arr[x + 1][y + 1] * arr[x + 2][y + 2] * arr[x + 3][y + 3];
                 if (product3 > max) {
                     max = product3;

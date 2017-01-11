@@ -13,10 +13,11 @@
         if (n > 2) {
             arr[n - 1] = arr[n - 2] + arr[n - 3];
         }
-        return arr[n - 1]
+        return arr[n - 1];
     }
     var sum = 0;
-    for (var i = 1; f(i) <= 4000000; i++) {
+    const WITHIN_NO = 4000000;
+    for (var i = 1; f(i) <= WITHIN_NO; i++) {
         if (f(i) % 2 == 0) {
             sum += f(i);
         }
