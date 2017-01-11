@@ -6,10 +6,10 @@ a^2 + b^2 = c^2 例如：3^2 + 4^2 = 9 + 16 = 25 = 5^2.
         var sum = 0;
         const WITHIN_NO = 2000000;
         for (var j = 2; j <= WITHIN_NO; j++) {
-            IfPrimeNo(j);
+            ifPrimeNo(j);
         }
         //如果用2到根号zs之间的所有整数去除，均无法整除，则zs为质数。
-        function IfPrimeNo(zs) {
+        function ifPrimeNo(zs) {
             for (var i = 2; i <= Math.sqrt(zs); i++) {
                 if (zs % i == 0) {
                     return false;

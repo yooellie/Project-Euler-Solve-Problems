@@ -8,12 +8,12 @@
         //先算出因子
         if (COMPOSITE_NO % j == 0) {
             //再算出因子中的质数
-            IfPrimeNo(j);
+            ifPrimeNo(j);
         }
     }
 
     //如果用2到根号zs之间的所有整数去除，均无法整除，则zs为质数。
-    function IfPrimeNo(zs) {
+    function ifPrimeNo(zs) {
         for (var i = 2; i <= Math.sqrt(zs); i++) {
             if (zs % i == 0) {
                 return false;
