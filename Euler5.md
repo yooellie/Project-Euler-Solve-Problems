@@ -1,5 +1,6 @@
 #题目5：找出最小的能被1-20中每个数整除的数。
 > **注意：** 2520是最小的能被1-10中每个数字整除的正整数。
+
 ```javascript
     function gcd(a, b) {
         var minNum = Math.min(a, b);
@@ -25,6 +26,10 @@
         }
     }
 ```
+
 ---
-参考文献：[https://my.oschina.net/tearlight/blog/145135].
+
+参考文献：[JS求一个数组元素的最小公倍数][1].
+
+[1]:https://my.oschina.net/tearlight/blog/145135
     
