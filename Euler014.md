@@ -9,7 +9,7 @@ n → 3n + 1 （若n为奇数）
 注： 序列开始生成后允许其中的项超过一百万。
 
 ```javascript
-var arr = [];
+    var arr = [];
     var a = 1;
     var maxLength = 0;
     var max = 0;
