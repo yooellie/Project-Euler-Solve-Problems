@@ -36,7 +36,6 @@
                         console.log("各位数字的五次幂之和的数" + result1000);
                     }
                     for (var e = 0; e < 10; e++) {
-
                         result10000 = Math.pow(a, 5) + Math.pow(b, 5) + Math.pow(c, 5) + Math.pow(d, 5) + Math.pow(e, 5);
                         if ((result10000 == a * 10000 + b * 1000 + c * 100 + d * 10 + e) && result10000 >= 10000 && result10000 <= 99999) {
                             sum += result10000;
