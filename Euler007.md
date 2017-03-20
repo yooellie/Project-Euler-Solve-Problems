@@ -1,4 +1,4 @@
-#题目7：找出第10001个质数。
+### 题目7：找出第10001个质数。
    ```javascript
        var arr = [];
        const PRIME_SERIAL_NO = 10000;
