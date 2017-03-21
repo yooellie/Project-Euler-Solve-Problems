@@ -4,20 +4,5 @@
 数字0、1、2、3、4、5、6、7、8、9的字典序排列中第一百万位的排列是什么？
 
 ```javascript
-    var place = 1000000;
-    var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    var arr = [];
-    var cj = 1;
-    var result = [];
-    for (var i = 1; i < num.length; i++) {
-        cj *= i;
-        arr.push(cj);
-    }
-    for (var j = arr.length - 1; j >= 0; j--) {
-        var a = parseInt(place / arr[j]);
-        result.push(num[a]);
-        place = parseInt(place % arr[j]);
-        num.splice(a, 1);
-    }
-    console.log(result.join(""));
+   
 ```
